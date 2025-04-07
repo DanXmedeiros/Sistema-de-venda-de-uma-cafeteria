@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Usuários - Sistema de Vendas</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="main-container">
+    <span id="logoutBtn" class="logout">Sair</span>
+    <h1>Sistema de Vendas - Cafeteria</h1>
+    <p>Bem-vindo, <span id="currentUser">Usuário</span>!</p>
+
+    <div class="nav">
+      <a href="dashboard.html"><button class="nav-btn">Dashboard</button></a>
+      <a href="usuarios.html"><button class="nav-btn">Usuários</button></a>
+      <a href="produtos.html"><button class="nav-btn">Produtos</button></a>
+      <a href="vendas.html"><button class="nav-btn">Vendas</button></a>
+    </div>
+
+    <div id="users" class="section">
+      <h2>Gerenciamento de Usuários</h2>
+      <div id="userMessage" class="success"></div>
+
+      <h3>Novo Usuário</h3>
+      <div class="form-group">
+        <label for="newFullName">Nome Completo:</label>
+        <input type="text" id="newFullName" placeholder="Nome completo">
+      </div>
+      <div class="form-group">
+        <label for="newUserId">ID:</label>
+        <input type="text" id="newUserId" placeholder="ID do usuário">
+      </div>
+      <div class="form-group">
+        <label for="newEmail">E-mail:</label>
+        <input type="email" id="newEmail" placeholder="email@exemplo.com">
+      </div>
+      <div class="form-group">
+        <label for="newPhone">Telefone:</label>
+        <input type="text" id="newPhone" placeholder="(00) 00000-0000">
+      </div>
+      <div class="form-group">
+        <label for="newUserPassword">Senha:</label>
+        <input type="password" id="newUserPassword" placeholder="Senha">
+      </div>
+      <div class="form-group">
+        <label for="isAdmin">Administrador:</label>
+        <select id="isAdmin">
+          <option value="false">Não</option>
+          <option value="true">Sim</option>
+        </select>
+      </div>
+      <button id="addUserBtn">Adicionar Usuário</button>
+
+      <h3>Usuários Cadastrados</h3>
+      <table id="usersTable">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>ID</th>
+            <th>E-mail</th>
+            <th>Telefone</th>
+            <th>Admin</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Dados dos usuários serão inseridos aqui -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="usuarios.js"></script>
+</body>
+</html>

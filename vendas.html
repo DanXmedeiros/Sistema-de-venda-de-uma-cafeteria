@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vendas - Sistema de Vendas</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="main-container">
+    <span id="logoutBtn" class="logout">Sair</span>
+    <h1>Sistema de Vendas - Cafeteria</h1>
+    <p>Bem-vindo, <span id="currentUser">Usuário</span>!</p>
+
+    <div class="nav">
+      <a href="dashboard.html"><button class="nav-btn">Dashboard</button></a>
+      <a href="usuarios.html"><button class="nav-btn">Usuários</button></a>
+      <a href="produtos.html"><button class="nav-btn">Produtos</button></a>
+      <a href="vendas.html"><button class="nav-btn">Vendas</button></a>
+    </div>
+
+    <div id="sales" class="section">
+      <h2>Registro de Vendas</h2>
+      <div id="saleMessage" class="success"></div>
+
+      <h3>Nova Venda</h3>
+      <div class="form-group">
+        <label for="saleProduct">Produto:</label>
+        <select id="saleProduct">
+          <!-- Opções de produtos serão inseridas aqui -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="saleQuantity">Quantidade:</label>
+        <input type="number" id="saleQuantity" placeholder="1" min="1" value="1">
+      </div>
+      <div class="form-group">
+        <label>Preço Unitário: R$ <span id="unitPrice">0.00</span></label>
+      </div>
+      <div class="form-group">
+        <label>Total: R$ <span id="totalPrice">0.00</span></label>
+      </div>
+      <button id="makeSaleBtn">Registrar Venda</button>
+
+      <h3>Histórico de Vendas</h3>
+      <table id="salesTable">
+        <thead>
+          <tr>
+            <th>Data</th>
+            <th>Produto</th>
+            <th>Quantidade</th>
+            <th>Preço Unit. (R$)</th>
+            <th>Total (R$)</th>
+            <th>Vendedor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Dados das vendas serão inseridos aqui -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="vendas.js"></script>
+</body>
+</html>

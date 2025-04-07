@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard - Sistema de Vendas</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="main-container">
+    <span id="logoutBtn" class="logout">Sair</span>
+    <h1>Sistema de Vendas - Cafeteria</h1>
+    <p>Bem-vindo, <span id="currentUser">Usuário</span>!</p>
+
+    <div class="nav">
+      <a href="dashboard.html"><button class="nav-btn">Dashboard</button></a>
+      <a href="usuarios.html"><button class="nav-btn">Usuários</button></a>
+      <a href="produtos.html"><button class="nav-btn">Produtos</button></a>
+      <a href="vendas.html"><button class="nav-btn">Vendas</button></a>
+    </div>
+
+    <div id="dashboard" class="section">
+      <h2>Dashboard</h2>
+      <div id="stockAlert"></div>
+      <div>
+        <h3>Resumo</h3>
+        <p>Total de vendas hoje: R$ <span id="todaySales">0.00</span></p>
+        <p>Total de produtos: <span id="totalProducts">0</span></p>
+        <p>Total de usuários: <span id="totalUsers">0</span></p>
+      </div>
+    </div>
+  </div>
+  <script src="dashboard.js"></script>
+</body>
+</html>
