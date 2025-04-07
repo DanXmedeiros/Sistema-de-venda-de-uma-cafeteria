@@ -1,0 +1,14 @@
+{
+    "usuarios": [
+      {
+        "id": 1,
+        "nome": "Admin",
+        "email": "admin@cafe.com",
+        "telefone": "00000000000",
+        "senha": "admin"
+      }
+    ],
+    "produtos": [],
+    "vendas": []
+  }
+  
