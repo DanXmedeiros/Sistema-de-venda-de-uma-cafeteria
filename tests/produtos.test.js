@@ -1,3 +1,12 @@
+/*
+Autor: Isaías Peres
+Data: 01/04/2025
+Descrição: Testes unitários para funções do módulo de produtos. 
+Inclui testes de validação de campos, criação de produto com ID, tradução de tipos de produto 
+e formatação de valores monetários.
+*/
+
+
 const {
   validateProductFields,
   createProduct,
@@ -45,4 +54,4 @@ describe("Product Manager", () => {
 
 });
 
-  
+
