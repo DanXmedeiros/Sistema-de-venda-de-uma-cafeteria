@@ -3,6 +3,7 @@
  */
 //Autor: Sarah Silva Lima
 // Data: 02/04/2025
+//Descrição: Testes unitários para a função de login, entrada de usuários ao sistema
 const { handleLogin, authenticate } = require('../login');
 //criando uma sessão de teste, e dando um nome a ela
 describe("Autenticação e login DOM", () => {
