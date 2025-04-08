@@ -1,6 +1,8 @@
 /**
  * @jest-environment jsdom
  */
+//Autor: Sarah Silva Lima
+// Data: 02/04/2025
 const { handleLogin, authenticate } = require('../login');
 //criando uma sessão de teste, e dando um nome a ela
 describe("Autenticação e login DOM", () => {
