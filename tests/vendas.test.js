@@ -1,3 +1,14 @@
+//Autor: João Victor Rocha Carvalho
+// Data: 31/03/2025
+//Descrição: 
+// Testes automatizados para validar o comportamento do botão de registro de venda (makeSaleBtn).
+// Os testes verificam:
+// 1. Registro correto de uma venda com atualização de estoque.
+// 2. Exibição de erro ao não selecionar um produto.
+// 3. Exibição de erro ao informar uma quantidade inválida (zero ou negativa).
+// 4. Exibição de erro se o produto selecionado não existir na lista de produtos.
+// 5. Exibição de erro se a quantidade solicitada exceder o estoque disponível.
+
 // Descreve o grupo de testes para o botão de registro de venda
 describe("Registro de venda (makeSaleBtn)", () => {
     let makeSaleBtn, saleProduct, saleQuantity, saleMessage;
